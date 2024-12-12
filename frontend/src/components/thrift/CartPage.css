@@ -1,0 +1,120 @@
+/* cartPage.css */
+
+.cart-page {
+    background-color: #f8f8f8;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .cart-items {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .image-column {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .cart-item-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+  }
+  
+  .details-column {
+    flex: 3;
+    padding-left: 15px;
+  }
+  
+  .details-column h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  .details-column p {
+    margin: 5px 0;
+  }
+  
+  .delete-column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 15px;
+  }
+  
+  .delete-item-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+  }
+  
+  .delete-icon {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .cart-total {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+
+  /* Style for the container that holds the empty cart message and button */
+.empty-cart {
+    text-align: center; /* Center the text */
+    margin-top: 50px; /* Add some space from the top of the page */
+  }
+  
+  /* Styling for the 'Continue Shopping' button */
+  .continue-shopping-btn {
+    background-color: #559655; /* Dark green background */
+    color: white; /* White text */
+    border: none; /* Remove border */
+    padding: 12px 25px; /* Padding for a bigger button */
+    font-size: 16px; /* Font size for the text */
+    border-radius: 30px; /* Rounded corners */
+    cursor: pointer; /* Change cursor to pointer */
+    transition: all 0.3s ease-in-out; /* Smooth transition for hover effect */
+    margin-top: 20px; /* Add space between message and button */
+  }
+  
+  .continue-shopping-btn:hover {
+    background-color: #4f524f; /* Hover effect */
+    transform: translateY(-2px); /* Slight lift effect */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+  }
+  
+  .continue-shopping-btn:focus {
+    outline: none; /* Remove focus outline */
+    box-shadow: 0 0 5px rgba(93, 91, 91, 0.3); /* Glow effect on focus */
+  }
+  
+  /* Styling for the empty cart message */
+  .empty-cart h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px; /* Add space under the message */
+  }
+  

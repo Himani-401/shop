@@ -1,0 +1,45 @@
+
+.about {
+    text-align: center;
+    padding: 20px; 
+    background-color: #000; 
+    color: #f9f9f9; 
+    border-top: 5px solid #f39c12; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+   
+}
+
+.philosophy {
+    font-weight: bold;
+    font-size: 2.5rem; 
+    margin-bottom: 10px; 
+    color: #e6e6e6;
+    text-transform: uppercase; 
+    letter-spacing: 1px; 
+    font-family: 'Arial', sans-serif; 
+}
+
+.learn-more {
+    background-color: #444; 
+    color: #fff;
+    padding: 12px 25px; 
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.3rem; 
+    font-weight: 600;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease; 
+    text-transform: uppercase; 
+    letter-spacing: 1px; 
+}
+
+.learn-more:hover {
+    background-color: #555;
+    color: #ddd; 
+    transform: scale(1.05); 
+}
+
+.learn-more:focus {
+    outline: none; 
+    box-shadow: 0 0 0 2px #f39c12; 
+}

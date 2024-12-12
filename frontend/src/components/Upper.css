@@ -1,0 +1,19 @@
+
+.upper{
+    height:25rem;
+    background-color: rgba(0, 0, 0, 0.881);
+    color: aliceblue;
+    
+    padding-top: 50px;
+    align-items: center;
+    text-align: center;
+}
+.upper-text{
+    font-size: 30px;
+}
+.upper-heading{
+    font-size: 80px ;
+    word-spacing: 10px;
+    font-weight: 100;
+    padding-top: 20px;
+}

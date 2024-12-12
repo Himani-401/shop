@@ -1,0 +1,233 @@
+.contact-us-container {
+    max-width: 800px;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: #121212;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6); 
+    border-radius: 15px;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  }
+  
+  .contact-us-container:hover {
+    transform: scale(1.03);
+    background-color: #1e1e1e; 
+  }
+  
+  .contact-header {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .contact-title {
+    font-size: 2.5rem;
+    color: #e0e0e0; 
+    margin-bottom: 10px;
+    animation: slideDown 1s ease-out;
+  }
+  
+  .contact-subtitle {
+    font-size: 1.2rem;
+    color: #a0a0a0; 
+    animation: fadeIn 1.5s ease-in-out;
+  }
+  
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .form-group {
+    animation: fadeInUp 1s ease-in-out;
+  }
+  
+  .input-animate {
+    width: 100%;
+    padding: 15px;
+    font-size: 1.1rem;
+    border: 2px solid #333333; 
+    border-radius: 10px;
+    background-color: #202020; 
+    color: #ffffff; 
+    transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  .input-animate:focus {
+    border-color: #bb86fc; 
+    box-shadow: 0 0 10px rgba(187, 134, 252, 0.5); 
+    outline: none;
+  }
+  
+  .submit-button {
+    padding: 15px;
+    font-size: 1.2rem;
+    color: #ffffff;
+    background-color: #bb86fc; 
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+  }
+  
+  .submit-button:hover {
+    background-color: #9855e5; 
+    transform: translateY(-3px);
+  }
+  
+  .floating-icons {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    pointer-events: none;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    opacity: 0.4;
+  }
+  
+  .icon {
+    font-size: 2.5rem;
+    color: #bb86fc; 
+    animation: float 4s ease-in-out infinite;
+  }
+  
+  .email-icon {
+    animation-delay: 0.5s;
+  }
+  
+  .phone-icon {
+    animation-delay: 1s;
+  }
+  
+  .location-icon {
+    animation-delay: 1.5s;
+  }
+  
+  .background-circles {
+    position: absolute;
+    top: -100px;
+    left: -100px;
+    pointer-events: none;
+    z-index: -1;
+  }
+  
+  .circle {
+    border-radius: 50%;
+    position: absolute;
+  }
+  
+  .large-circle {
+    width: 500px;
+    height: 500px;
+    background: linear-gradient(45deg, #3a3a3a, #606060); 
+    animation: scaleUp 6s ease-in-out infinite;
+  }
+  
+  .medium-circle {
+    width: 300px;
+    height: 300px;
+    background: linear-gradient(45deg, #606060, #808080);
+    top: 50px;
+    left: 200px;
+    animation: scaleUp 5s ease-in-out infinite;
+  }
+  
+  .small-circle {
+    width: 150px;
+    height: 150px;
+    background: linear-gradient(45deg, #808080, #a0a0a0); 
+    top: 150px;
+    left: 100px;
+    animation: scaleUp 4s ease-in-out infinite;
+  }
+  
+  .status-message {
+    margin-top: 20px;
+    text-align: center;
+    color: #bb86fc; 
+    font-size: 1.2rem;
+  }
+  
+  @keyframes slideDown {
+    0% {
+      opacity: 0;
+      transform: translateY(-30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  
+  @keyframes scaleUp {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.05);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .contact-us-container {
+      max-width: 100%;
+      margin: 20px;
+      padding: 15px;
+    }
+  
+    .contact-title {
+      font-size: 2rem;
+    }
+  
+    .contact-subtitle {
+      font-size: 1rem;
+    }
+  
+    .floating-icons {
+      flex-direction: row;
+      top: unset;
+      bottom: 20px;
+      right: 50%;
+      transform: translateX(50%);
+    }
+  
+    .icon {
+      font-size: 2rem;
+    }
+  
+    .background-circles .circle {
+      display: none;
+    }
+  }
+  
